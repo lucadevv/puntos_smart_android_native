@@ -56,7 +56,7 @@ fun SignInSignUpScreen(
             .padding(0.dp)
             .fillMaxSize()
         ){
-//            VideoBackground(url = "https://servicios.puntossmart.com/img/anuncio.mp4")
+            VideoBackground(url = "https://servicios.puntossmart.com/img/anuncio.mp4")
             Column(
                 verticalArrangement = Arrangement.Bottom,
                 horizontalAlignment = Alignment.Start,

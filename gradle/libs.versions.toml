@@ -10,6 +10,8 @@ activityCompose = "1.10.0"
 composeBom = "2024.04.01"
 expoplayer = "1.5.1"
 nav_version = "2.8.8"
+serialization_version= "1.7.3"
+kotlin_serialization_plugin= "2.0.21"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -30,10 +32,11 @@ androidx-media3 = { group = "androidx.media3", name = "media3-exoplayer", versio
 androidx-media3-ui = { group = "androidx.media3", name = "media3-ui", version.ref ="expoplayer"}
 androidx-media3-common = { group = "androidx.media3", name ="media3-common", version.ref="expoplayer"}
 androidx-navigation = { group = "androidx.navigation", name = "navigation-compose", version.ref = "nav_version"}
-
+kotlinx-serialization = { group = "org.jetbrains.kotlinx", name = "kotlinx-serialization-json", version.ref="serialization_version"}
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
 kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
 kotlin-compose = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
+kotlin-serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin_serialization_plugin"}
 

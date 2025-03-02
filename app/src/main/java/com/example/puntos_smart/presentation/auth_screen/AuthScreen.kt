@@ -4,6 +4,7 @@ import androidx.compose.foundation.background
 import androidx.compose.foundation.gestures.detectTapGestures
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
@@ -17,6 +18,7 @@ import androidx.compose.material.icons.automirrored.filled.ArrowBack
 import androidx.compose.material.icons.filled.ArrowBack
 import androidx.compose.material.icons.filled.Call
 import androidx.compose.material.icons.filled.Clear
+import androidx.compose.material3.Button
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
@@ -133,6 +135,15 @@ fun AuthScreen(navController: NavController){
                     unfocusedLeadingIconColor = Color.Gray,
                 ),
             )
+            Spacer(modifier = Modifier.height(16.dp))
+            Button(
+                onClick = {},
+                modifier = Modifier
+                    .fillMaxWidth(),
+                contentPadding = PaddingValues(vertical = 16.dp, horizontal = 32.dp)
+            ) {
+                Text("Siguiente")
+            }
         }
 
     }
