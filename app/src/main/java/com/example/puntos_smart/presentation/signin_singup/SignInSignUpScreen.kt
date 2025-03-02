@@ -40,7 +40,7 @@ import androidx.media3.ui.PlayerView
 import androidx.navigation.NavController
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.rememberNavController
-import com.example.puntos_smart.core.router.Screen
+import com.example.puntos_smart.core.router.AuthScreen
 import com.example.puntos_smart.ui.theme.Puntos_smartTheme
 
 
@@ -81,7 +81,7 @@ fun SignInSignUpScreen(
                 Spacer(modifier = Modifier.height(32.dp))
                 Button(
                     onClick = {
-                        navHostController.navigate(Screen.AuthScreen.route)
+                        navHostController.navigate(AuthScreen)
                     },
                     modifier = Modifier
                         .fillMaxWidth(),

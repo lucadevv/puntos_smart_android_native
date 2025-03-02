@@ -47,6 +47,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
 import androidx.navigation.compose.rememberNavController
+import com.example.puntos_smart.core.router.LoginScreen
 import com.example.puntos_smart.ui.theme.Puntos_smartTheme
 
 @OptIn(ExperimentalMaterial3Api::class)
@@ -137,12 +138,17 @@ fun AuthScreen(navController: NavController){
             )
             Spacer(modifier = Modifier.height(16.dp))
             Button(
-                onClick = {},
+                onClick = {
+                    navController.navigate(LoginScreen)
+                },
                 modifier = Modifier
                     .fillMaxWidth(),
                 contentPadding = PaddingValues(vertical = 16.dp, horizontal = 32.dp)
             ) {
-                Text("Siguiente")
+                Text("Siguiente",
+                     style = MaterialTheme.typography.bodyLarge
+                        .copy(fontWeight = FontWeight.Bold)
+                )
             }
         }
 
